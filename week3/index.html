@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V Mahamadh Basha | Software Engineer & ServiceNow Developer Portfolio</title>
+    <meta name="description" content="Professional portfolio of V Mahamadh Basha - Java Full-Stack Developer & Certified ServiceNow CSA/CAD.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="bg-canvas">
+        <div class="glow-orb glow-cyan"></div>
+        <div class="glow-orb glow-green"></div>
+        <div class="bg-grid"></div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <header class="navbar-header" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-accent">&lt;</span>Basha<span class="logo-accent">.dev /&gt;</span>
+            </a>
+            
+            <!-- Mobile Menu Toggle Button (Hamburger icon) -->
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav-links" id="nav-links">
+                <a href="#home" class="nav-item active">Home</a>
+                <a href="#about" class="nav-item">About</a>
+                <a href="#skills" class="nav-item">Skills</a>
+                <a href="#projects" class="nav-item">Projects</a>
+                <a href="#timeline" class="nav-item">Experience</a>
+                <a href="#contact" class="nav-btn">Get In Touch</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="home">
+            <div class="container hero-container">
+                <div class="hero-text-content">
+                    <div class="badge-role">
+                        <span class="pulsing-dot"></span> Open to Software Engineer & ServiceNow Roles
+                    </div>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text">V Mahamadh Basha</span>
+                    </h1>
+                    <!-- Typing target element -->
+                    <h2 class="hero-subtitle">
+                        A passionate <span id="typing-text" class="accent-text"></span><span class="cursor">|</span>
+                    </h2>
+                    <p class="hero-description">
+                        Computer Science undergraduate specializing in **Java Full-Stack Development** and certified **ServiceNow Application Development**. Solved **530+ DSA problems** on LeetCode.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn-primary">Hire Me</a>
+                        <a href="#projects" class="btn-secondary">View Work</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section" id="about">
+            <div class="container">
+                <h2 class="section-title text-center">About Me</h2>
+                <div class="section-underline"></div>
+                <div class="about-grid">
+                    <div class="about-info-card">
+                        <h3>Executive Summary</h3>
+                        <p>
+                            I am a results-driven Computer Science undergraduate and certified ServiceNow developer (CSA, CAD) specializing in building scalable Java Full Stack web applications. With a strong analytical foundation backed by solving 530+ Data Structures and Algorithms (DSA) problems on LeetCode.
+                        </p>
+                        <div class="meta-info-list">
+                            <div class="meta-item"><span class="meta-label">Location:</span> <span class="meta-val">Kadapa, AP, India</span></div>
+                            <div class="meta-item"><span class="meta-label">Education:</span> <span class="meta-val">B.Tech in CSE (Class of 2027)</span></div>
+                            <div class="meta-item"><span class="meta-label">Email:</span> <span class="meta-val">vmahamadhbasha@gmail.com</span></div>
+                        </div>
+                    </div>
+                    <div class="about-stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-num color-cyan">530+</div>
+                            <div class="stat-desc">DSA Problems</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-num color-green">2+</div>
+                            <div class="stat-desc">ServiceNow Certs</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Specialization Role Filters (Weekly Interactive Target) -->
+        <section class="filter-section-container">
+            <div class="container text-center">
+                <h3 class="filter-title">Toggle Specialization Profile</h3>
+                <div class="role-toggles-container">
+                    <button class="role-toggle-btn active" id="role-toggle-java" onclick="switchActiveRole('java')">Java Full-Stack</button>
+                    <button class="role-toggle-btn" id="role-toggle-servicenow" onclick="switchActiveRole('servicenow')">ServiceNow Developer</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section with Dynamic Filtering data-role attributes -->
+        <section class="skills-section" id="skills">
+            <div class="container">
+                <h2 class="section-title text-center">Technical Skills</h2>
+                <div class="section-underline"></div>
+                <div class="skills-grid">
+                    <div class="skill-category-box filter-section" data-role="java">
+                        <h3>Java Full-Stack Stack</h3>
+                        <div class="skills-wrapper">
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">Spring Boot</span>
+                            <span class="skill-tag">Hibernate</span>
+                            <span class="skill-tag">HTML5/CSS3</span>
+                            <span class="skill-tag">React.js</span>
+                        </div>
+                    </div>
+                    <div class="skill-category-box filter-section" data-role="servicenow">
+                        <h3>ServiceNow Dev Suite</h3>
+                        <div class="skills-wrapper">
+                            <span class="skill-tag">ServiceNow CAD</span>
+                            <span class="skill-tag">ServiceNow CSA</span>
+                            <span class="skill-tag">Client Scripts</span>
+                            <span class="skill-tag">Business Rules</span>
+                            <span class="skill-tag">Flow Designer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section with Dynamic Filtering data-role attributes -->
+        <section class="projects-section" id="projects">
+            <div class="container">
+                <h2 class="section-title text-center">Selected Projects</h2>
+                <div class="section-underline"></div>
+                <div class="projects-grid">
+                    <div class="project-card" data-role="java">
+                        <h3>HireMe Job Portal</h3>
+                        <p>A full-stack recruitment website connecting job applicants with active recruiters.</p>
+                        <div class="project-tags">
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">Spring Boot</span>
+                        </div>
+                    </div>
+                    <div class="project-card" data-role="servicenow">
+                        <h3>YouTube Analytics App</h3>
+                        <p>Automation flow and visualization reporting dashboard customized for ServiceNow.</p>
+                        <div class="project-tags">
+                            <span class="skill-tag">ServiceNow</span>
+                            <span class="skill-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="timeline-section" id="timeline">
+            <div class="container">
+                <h2 class="section-title text-center">Experience</h2>
+                <div class="section-underline"></div>
+                <div class="timeline-container">
+                    <div class="timeline-item">
+                        <h3>Virtual Intern</h3>
+                        <h4>Infosys Springboard</h4>
+                        <p>Engaging in Full-Stack Web Development, utilizing Node.js, Express, and MongoDB.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <h2 class="section-title text-center">Contact Me</h2>
+                <div class="section-underline"></div>
+                <div class="contact-container">
+                    <form class="contact-form" action="mailto:vmahamadhbasha@gmail.com" method="post" enctype="text/plain">
+                        <div class="form-group">
+                            <label for="form-name">Your Name</label>
+                            <input type="text" id="form-name" required placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="form-email">Your Email</label>
+                            <input type="email" id="form-email" required placeholder="john@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="form-message">Your Message</label>
+                            <textarea id="form-message" rows="5" required placeholder="Type your message here..."></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 V Mahamadh Basha. All rights reserved.</p>
+    </footer>
+
+    <!-- Client-side script file reference -->
+    <script src="index.js"></script>
+</body>
+</html>

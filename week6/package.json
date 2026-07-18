@@ -1,0 +1,21 @@
+{
+  "name": "portfolio-integrated-final",
+  "version": "1.0.0",
+  "description": "Final integrated Full-Stack Developer Portfolio with Node.js, Express, and MongoDB.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.2"
+  },
+  "author": "V Mahamadh Basha",
+  "license": "ISC"
+}

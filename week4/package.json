@@ -1,0 +1,15 @@
+{
+  "name": "portfolio-backend-week4",
+  "version": "1.0.0",
+  "description": "Week 4 Node.js Express server to serve files and mock contact endpoints.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  },
+  "author": "V Mahamadh Basha",
+  "license": "ISC"
+}

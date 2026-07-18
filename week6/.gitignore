@@ -1,0 +1,14 @@
+# Dependency modules
+node_modules/
+
+# Local configuration environment credentials
+.env
+
+# Diagnostic logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# System-specific configuration files
+.DS_Store
+Thumbs.db
